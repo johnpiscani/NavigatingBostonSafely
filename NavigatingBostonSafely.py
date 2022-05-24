@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-csvFile = "https://github.com/johnpiscani/NavigatingBostonSafely/blob/main/BostonCrimeData.csv"
+csvFile = "https://raw.githubusercontent.com/johnpiscani/NavigatingBostonSafely/main/BostonCrimeData.csv"
 
 
 def main():
