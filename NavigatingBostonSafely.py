@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-csvFile = "/Users/johnpiscani/Library/CloudStorage/OneDrive-BentleyUniversity/cs230/classNotes/finalProject/BostonCrimeData.csv"
+csvFile = "BostonCrimeData.csv"
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
 
     intro()
     sidebar(df)
-    bpdDistricts = "/Users/johnpiscani/Library/CloudStorage/OneDrive-BentleyUniversity/cs230/classNotes/finalProject/bpdDistricts.png"
+    bpdDistricts = "bpdDistricts.png"
     st.caption('Below is a map of all of the police department districts')
     st.image(bpdDistricts)
 
@@ -122,7 +122,7 @@ def makeMap(df):
 # first screen
 def intro():
     st.markdown("<h1 style='text-align: center;;'>Navigating Boston Safely</h1>", unsafe_allow_html=True)
-    image = "/Users/johnpiscani/Library/CloudStorage/OneDrive-BentleyUniversity/cs230/classNotes/finalProject/boston.jpeg"
+    image = "boston.jpeg"
     st.image(image)
     st.markdown("<h2 style='text-align: center;'>By John Piscani</h2>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center;'>Data from data.boston.gov. This data includes data of crime incident reports from 2015 to 2022.</p>", unsafe_allow_html=True)
